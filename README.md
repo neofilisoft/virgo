@@ -9,18 +9,18 @@
 
 | Feature | Implementation |
 |---------|---------------|
-| 2D Rendering | PixiJS 8 — WebGPU → WebGL auto-select |
+| 2D Rendering | PixiJS 8 - WebGPU → WebGL auto-select |
 | 3D Rendering | Native WebGPU, PBR WGSL shader |
-| Mesh Optimization | meshoptimizer — 4-level auto-LOD |
-| Entity Component System | bitecs — 100k entities, SoA cache-friendly |
+| Mesh Optimization | meshoptimizer - 4-level auto-LOD |
+| Entity Component System | bitecs - 100k entities, SoA cache-friendly |
 | 3D Spatial Audio | Google Resonance Audio (HRTF) |
-| Music / Synthesis | Tone.js — BPM transport, samplers, effects |
-| Pathfinding | Pathfinding.js — A* on navmesh grid |
+| Music / Synthesis | Tone.js - BPM transport, samplers, effects |
+| Pathfinding | Pathfinding.js - A* on navmesh grid |
 | Input | Keyboard + Pointer + Gamepad, action map |
 | Scripting | TypeScript Behaviours + Event Sheets + Node Graph |
 | Networking | Client-side prediction stub (WebSocket) |
 | Asset Pipeline | CLI (prod) + Vite plugin (dev hot-reload) |
-| Editor | VS Code extension — Inspector + Node Graph |
+| Editor | VS Code extension - Inspector + Node Graph |
 
 ---
 
@@ -79,15 +79,15 @@ engine.start();
 |------|-----------------|
 | `"2d"` | PixiJS only |
 | `"3d"` | WebGPU pipeline only |
-| `"dual"` | Both — 3D world + 2D overlay |
+| `"dual"` | Both - 3D world + 2D overlay |
 
 ---
 
 ## VS Code Extension
 
 Install from `tools/vscode-extension/`. Provides:
-- **Scene Inspector** — live entity tree, ECS component values, pause/step/reload
-- **Node Graph Editor** — drag-and-drop visual scripting, exports `NodeGraph` JSON
+- **Scene Inspector** - live entity tree, ECS component values, pause/step/reload
+- **Node Graph Editor** - drag-and-drop visual scripting, exports `NodeGraph` JSON
 - **Auto hot-reload** on file save
 - **Asset Build** task
 
