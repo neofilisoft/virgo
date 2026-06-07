@@ -1,0 +1,19 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/core" },
+    { "path": "packages/ecs" },
+    { "path": "packages/renderer-2d" },
+    { "path": "packages/renderer-3d" },
+    { "path": "packages/audio" },
+    { "path": "packages/physics" },
+    { "path": "packages/input" },
+    { "path": "packages/asset-pipeline" },
+    { "path": "packages/scripting" },
+    { "path": "packages/networking" },
+    { "path": "packages/editor-bridge" },
+    { "path": "packages/runtime" },
+    { "path": "tools/cli" },
+    { "path": "tools/vscode-extension" }
+  ]
+}

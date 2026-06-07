@@ -1,0 +1,32 @@
+{
+  "name": "virgo-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Virgo Engine monorepo — Browser-first WebGPU + WASM game engine. By Neofilisoft / Studio Balmung.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev": "concurrently \"npm run dev -w @virgo/runtime\" \"npm run dev -w @virgo/editor-bridge\"",
+    "lint": "eslint packages/*/src --ext .ts,.tsx",
+    "typecheck": "tsc --build packages/*/tsconfig.json",
+    "test": "vitest run",
+    "clean": "rimraf packages/*/dist packages/*/.tsbuildinfo",
+    "new-game": "node tools/cli/bin/virgo.js init"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
+    "concurrently": "^9.1.2",
+    "eslint": "^9.27.0",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.2"
+  },
+  "engines": {
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
+  }
+}
